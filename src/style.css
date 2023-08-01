@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.logo {
+  width: 9.375rem;
+}
+
+li .contact-us-btn {
+  background: rgb(255,229,59);
+  background: linear-gradient(125deg, rgba(255,229,59,1) 30%, rgba(255,0,91,1) 100%);
+  border-radius: 5%;
+  padding: 7px 12px;
+  color: #000;
+}
+
+.nav-menu-list {
+  padding-left: 0;
+}
+
+.nav-menu-list li {
+  margin-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(255,229,59);
+  background: linear-gradient(125deg, rgba(255,229,59,1) 30%, rgba(255,0,91,1) 100%);
+}

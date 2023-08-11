@@ -1,34 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="src/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <header class="flex jc-sb">
-      <img src="/imgs/logo-white-cropped.png" alt="logo" class="logo">
-      <nav class="nav-menu">
-        <ul class="flex nav-menu-list">
-          <li><a class="">Home</a></li>
-          <li><a class="">Services</a></li>
-          <li><a class="contact-us-btn">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <canvas class="webgl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Sphere with Directional Light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="flex jc-sb ai-c">
+  <img src="/assets/logo-white-cropped.png" alt="logo" class="logo">
+  <nav class="nav-menu">
+    <ul class="flex nav-menu-list">
+      <li><a href="" class="">Home</a></li>
+      <li><a class="">Services</a></li>
+      <li><a href="mailto:newgroundai@gmail.com" class="contact-us-btn">Contact us</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero-section flex ai-c">
+    <h1 class="hero-text underline-animation">Leading the Way to Excellence: Embrace the Future with AI-Powered Solutions</h1>
+    <canvas class="webgl" id="bg"></canvas>
+  </section>
 
-      </canvas>
-    </main>
-    <!--
-    <footer>
-        <p>Created by sandrik</p>
-    </footer>
-    -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container flex jc-c">
+      <div class="service-box">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+        <h3>Chatbots</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam eros, malesuada vitae eleifend ac, egestas vel libero. Donec ac dapibus metus.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+        <h3>Streamlined Automations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam eros, malesuada vitae eleifend ac, egestas vel libero. Donec ac dapibus metus.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        <h3>Tech Solutions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam eros, malesuada vitae eleifend ac, egestas vel libero. Donec ac dapibus metus.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>basic footer</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+
+</body>
 </html>
+
+
+

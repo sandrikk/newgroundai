@@ -16,7 +16,7 @@
   <nav class="nav-menu">
     <ul class="flex nav-menu-list">
       <li><a href="" class="">Home</a></li>
-      <li><a class="">Services</a></li>
+      <li><a href="#services" onclick="scrollToSection('#services')" class="">Services</a></li>
       <li><a href="mailto:newgroundai@gmail.com" class="contact-us-btn">Contact us</a></li>
     </ul>
   </nav>
@@ -27,7 +27,7 @@
     <canvas class="webgl" id="bg"></canvas>
   </section>
 
-  <section class="services-section">
+  <section class="services-section" id="services" >
     <h2>Our Services</h2>
     <div class="services-container flex jc-c">
       <div class="service-box">
@@ -50,11 +50,29 @@
 
 </main>
 
-<footer>
-  <p>basic footer</p>
+<footer class="flex jc-sb ai-c">
+  <img src="/assets/logo-no-background.png" alt="logo-footer" class="logo-footer">
+  <p>All rights reserved.</p>
+  <nav class="nav-menu">
+    <ul class="flex nav-menu-list">
+      <li><a href="" class="">Home</a></li>
+      <li><a href="#services" onclick="scrollToSection('#services')" class="">Services</a></li>
+      <li><a href="mailto:newgroundai@gmail.com">Contact us</a></li>
+    </ul>
+  </nav>
 </footer>
 
 <script type="module" src="main.js"></script>
+<script>
+  function scrollToSection(sectionId) {
+    var section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
 
 </body>
 </html>

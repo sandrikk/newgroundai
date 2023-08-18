@@ -168,6 +168,11 @@ footer p {
   .logo-footer {
     margin-bottom: 5px;
   }
+
+  .webgl {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 

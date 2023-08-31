@@ -119,6 +119,27 @@ footer p {
   color: #000;
 }
 
+.hero-section div {
+  min-width: 50%;
+}
+
+.webgl {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+/* Typewriter */
+.typewriter-text {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* Define the animation keyframes */
 @keyframes underline {
   from {

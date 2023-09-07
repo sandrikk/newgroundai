@@ -38,6 +38,11 @@ scene.add(pointLight, ambientLight)
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
+// Disable OrbitControls on mobile devices
+if ('ontouchstart' in window) {
+    controls.enabled = false;
+}
+
 // Animation Loop
 
 function animate() {

@@ -1,2 +1,2 @@
 # newgroundai
-Live site URL: newgroundai.com
+Live site URL: https://newgroundai.com/
